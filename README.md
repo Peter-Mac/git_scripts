@@ -19,7 +19,7 @@ Capistrano is used to connect to each server and act as the deployment mechanism
 
 ## The scripts
 
-####do_feature_merge.sh
+### do_feature_merge.sh
 This script allows you to
 
 - merge your current feature branch back into the 'develop' branch
@@ -28,10 +28,10 @@ This script allows you to
 
 - create a new feature branch, or stay with the develop branch as active
 
-####do_release.sh
+### do_release.sh
 This script is used to push your local changes to the remote github repository and to provide a comment for the changes.
 
-####do_deploy.sh
+### do_deploy.sh
 This is the script responsible for executing the capistrano deployment tasks. It takes an environment value as parameter (either 'staging' or 'production').
 
 - It updates a VERSION file with the date and time of this release, checks the VERSION file into github,
